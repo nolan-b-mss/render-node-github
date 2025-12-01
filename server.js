@@ -17,10 +17,10 @@ app.get('/', (req, res) => {
         <!DOCTYPE html>
         <html>
         <head>
-            <title>Browser Title</title>
+            <title>t2a27</title>
         </head>
         <body>
-            <h3 align=center>Render-node-backend</h3>
+            <h3 align=center>t2a27-render-node-nolan</h3>
             <form action="/" method="post">
                 <label for="myText01">Enter Text:</label>
                 <input type="text" id="myText01" name="myText01">
@@ -43,7 +43,7 @@ app.post('/', (req, res) => {
     }
 
     if (myCheck) {
-        checkResult = `<b style='color:green'> Cool! </b>`;
+        checkResult = `<b style='color:green'> That's correct! </b>`;
     } else {
         checkResult = `<span style='color:red'> Try the magic word "fred"</span>`;
     }
@@ -53,10 +53,10 @@ app.post('/', (req, res) => {
         <!DOCTYPE html>
         <html>
         <head>
-            <title>Browser Title</title>
+            <title>t2a27</title>
         </head>
         <body>
-            <h3 align=center>T2A06-node-codesandbox</h3>
+            <h3 align=center>t2a27-render-node-nolan</h3>
             <form action="/" method="post">
                 <label for="myText01">Enter Text:</label>
                 <input type="text" id="myText01" name="myText01">
