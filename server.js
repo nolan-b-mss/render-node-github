@@ -1,3 +1,4 @@
+let magicWordCount = 0;
 const express = require('express');
 const bodyParser = require('body-parser');
 const app = express();
@@ -40,10 +41,11 @@ app.post('/', (req, res) => {
 
     if (myInputText01 === 'fred') {
         myCheck = true;
+        magicWordCount += 1;
     }
 
     if (myCheck) {
-        checkResult = `<b style='color:green'> That's correct! </b>`;
+        checkResult = `<b style='color:green'> That's correct! </b> The magic word has been entered ${magicWordCount} times.`;
     } else {
         checkResult = `<span style='color:red'> Try the magic word "fred"</span>`;
     }
@@ -63,6 +65,7 @@ app.post('/', (req, res) => {
                 <input type="submit" value="Submit">
             </form>
             ${checkResult}
+            
         </body>
         </html>
     `);
